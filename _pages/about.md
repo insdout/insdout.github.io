@@ -65,7 +65,7 @@ latest_posts:
 
 Hi, I'm Michael Zaitsev. Welcome to my personal website.
 
-This is where I write. Head over to the [blog](/mzaitsev/blog/) to see my latest
-posts, or check out my [CV](/mzaitsev/cv/).
+This is where I write. Head over to the [blog]({{ '/blog/' | relative_url }}) to see my latest
+posts, or check out my [CV]({{ '/cv/' | relative_url }}).
 
 More about me coming soon.
