@@ -97,7 +97,7 @@
 
 /* Warm accents that remain legible on the light background. */
 html:root {
-  --global-theme-color: #806128;
-  --global-hover-color: #64491e;
+  --global-theme-color: #9d430e;
+  --global-hover-color: #7d3208;
   --global-hover-text-color: #ffffff;
 }
