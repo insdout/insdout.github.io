@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://insdout.github.io/mzaitsev/sitemap.xml
+Sitemap: https://insdout.github.io/sitemap.xml
