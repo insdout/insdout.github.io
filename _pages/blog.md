@@ -33,6 +33,7 @@ pagination:
     font-size: clamp(1.9rem, 4vw, 2.2rem);
     line-height: 1.2;
     font-weight: 700;
+    color: var(--global-text-color);
   }
 
   .blog-index .header-bar h2 {
