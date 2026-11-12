@@ -8,7 +8,7 @@ Install Ruby and Bundler, then run:
 
 ```bash
 bundle install
-bundle exec jekyll serve  # http://localhost:4000/mzaitsev/
+bundle exec jekyll serve  # http://localhost:4000/
 ```
 
 The local path reflects the `baseurl` currently set in `_config.yml`. Use `bundle exec jekyll build` to build the site into `_site/`.
@@ -19,9 +19,7 @@ ImageMagick generates responsive images. Python and `nbconvert` are needed for p
 
 The **Deploy site** GitHub Action builds qualifying changes pushed to `main` and publishes the output to the `gh-pages` branch, which GitHub Pages serves. Changes only to this README do not trigger the deployment workflow; it can also be run manually from the Actions tab.
 
-The repository is currently named `insdout`, so its project site address is [insdout.github.io/insdout/](https://insdout.github.io/insdout/). The current `baseurl` is still `/mzaitsev`; update it to `/insdout` and redeploy to match that address.
-
-For a root site at [insdout.github.io](https://insdout.github.io/), rename the repository to `insdout.github.io`, set `baseurl: ""` in `_config.yml`, and redeploy.
+The site is published at [insdout.github.io](https://insdout.github.io/). The repository is named `insdout.github.io`, and `baseurl` is empty in `_config.yml` for the root URL.
 
 ## Structure
 
