@@ -4,6 +4,8 @@ module.exports = {
   output: "_site/assets/css/",
   skippedContentGlobs: ["_site/assets/**/*.html"],
   safelist: [
+    // Rouge token classes can occur in future posts, not just the current build.
+    /^(?:c|ch|cm|cp|cpf|c1|cs|k|kc|kd|kn|kp|kr|kt|nt|ow|s|sa|sb|sc|dl|sd|s2|se|sh|si|sx|sr|s1|ss|m|mb|mf|mh|mi|il|mo|no|nf|fm|nc|nn|nb|bp|na|nv|vc|vg|vi|o|p|n|nd|err|gd|gt|gi)$/,
     "collapse",
     "collapsing",
     "show",
