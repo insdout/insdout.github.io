@@ -26,14 +26,6 @@ latest_posts:
 
 <style>
   /* Homepage presentation, inspired by Lil'Log's quiet editorial style. */
-  .post {
-    --global-theme-color: #345f78;
-    --global-hover-color: #23495f;
-  }
-  html[data-theme="dark"] .post {
-    --global-theme-color: #a5c8d9;
-    --global-hover-color: #c6e1ed;
-  }
   .post .post-header { margin-bottom: 2rem; }
   .post .post-header .post-title { letter-spacing: -0.035em; }
   .post article .profile.float-left {
