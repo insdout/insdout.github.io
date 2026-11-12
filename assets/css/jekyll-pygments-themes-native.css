@@ -72,7 +72,7 @@
 .highlight .vc,
 .highlight .vg,
 .highlight .vi {
-  color: #83a598;
+  color: #8ec07c;
 }
 
 .highlight .o,
@@ -93,4 +93,19 @@
 
 .highlight .gi {
   color: #b8bb26;
+}
+
+/* Warm accents for the site's existing dark background. */
+html:root[data-theme="dark"] {
+  --global-theme-color: #fabd2f;
+  --global-hover-color: #fe8019;
+  --global-hover-text-color: #282828;
+}
+
+#search-toggle .nav-link {
+  font-size: 0;
+}
+
+#search-toggle .nav-link i {
+  font-size: 1rem;
 }
