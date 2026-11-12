@@ -6,14 +6,6 @@
     initTheme();
   </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item active"> <a class="nav-link" href="/">about <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">cv </a> </li> <li class="nav-item "> <a class="nav-link" href="/blog/">blog </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title"> <span class="font-weight-bold">Michael</span> Zaitsev </h1> <p class="desc">Personal website and blog.</p> </header> <article> <div class="profile float-left"> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/me-480.webp 480w,/assets/img/me-800.webp 800w,/assets/img/me-1400.webp 1400w," type="image/webp" sizes="(min-width: 930px) 270.0px, (min-width: 576px) 30vw, 95vw"> <img src="/assets/img/me.png?v=ef6417d274ee77d7b176ac553ff4eb0a" class="img-fluid z-depth-1 rounded-circle" width="100%" height="auto" alt="me.png" loading="eager" onerror="this.onerror=null; document.querySelectorAll('.responsive-img-srcset').forEach(function (n) { n.remove(); });"> </source></picture> </figure> </div> <div class="clearfix"> <style>
   /* Homepage presentation, inspired by Lil'Log's quiet editorial style. */
-  .post {
-    --global-theme-color: #345f78;
-    --global-hover-color: #23495f;
-  }
-  html[data-theme="dark"] .post {
-    --global-theme-color: #a5c8d9;
-    --global-hover-color: #c6e1ed;
-  }
   .post .post-header { margin-bottom: 2rem; }
   .post .post-header .post-title { letter-spacing: -0.035em; }
   .post article .profile.float-left {
