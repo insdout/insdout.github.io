@@ -1,0 +1,112 @@
+/* Gruvbox-inspired Rouge palette for light mode. */
+.highlight,
+.highlight pre,
+.highlight code {
+  background-color: #f5f3ed;
+  color: #3c3836;
+}
+
+.highlight .c,
+.highlight .ch,
+.highlight .cm,
+.highlight .cp,
+.highlight .cpf,
+.highlight .c1,
+.highlight .cs {
+  color: #665c54;
+  font-style: italic;
+}
+
+.highlight .k,
+.highlight .kc,
+.highlight .kd,
+.highlight .kn,
+.highlight .kp,
+.highlight .kr,
+.highlight .kt,
+.highlight .nt,
+.highlight .ow {
+  color: #9d0006;
+}
+
+.highlight .s,
+.highlight .sa,
+.highlight .sb,
+.highlight .sc,
+.highlight .dl,
+.highlight .sd,
+.highlight .s2,
+.highlight .se,
+.highlight .sh,
+.highlight .si,
+.highlight .sx,
+.highlight .sr,
+.highlight .s1,
+.highlight .ss {
+  color: #79740e;
+}
+
+.highlight .m,
+.highlight .mb,
+.highlight .mf,
+.highlight .mh,
+.highlight .mi,
+.highlight .il,
+.highlight .mo,
+.highlight .no,
+.highlight .kc {
+  color: #8f3f71;
+}
+
+.highlight .nf,
+.highlight .fm,
+.highlight .nc,
+.highlight .nn {
+  color: #8a5300;
+}
+
+.highlight .nb,
+.highlight .bp,
+.highlight .na,
+.highlight .nv,
+.highlight .vc,
+.highlight .vg,
+.highlight .vi {
+  color: #427b58;
+}
+
+.highlight .o,
+.highlight .p,
+.highlight .n {
+  color: #3c3836;
+}
+
+.highlight .nd {
+  color: #af3a03;
+}
+
+.highlight .err,
+.highlight .gd,
+.highlight .gt {
+  color: #9d0006;
+}
+
+.highlight .gi {
+  color: #79740e;
+}
+
+
+/* Warm accents that remain legible on the light background. */
+html:root {
+  --global-theme-color: #9d430e;
+  --global-hover-color: #7d3208;
+  --global-hover-text-color: #ffffff;
+}
+
+#search-toggle .nav-link {
+  font-size: 0;
+}
+
+#search-toggle .nav-link i {
+  font-size: 1rem;
+}
