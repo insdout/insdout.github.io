@@ -5,7 +5,7 @@ permalink: /
 subtitle: Personal website and blog.
 
 profile:
-  align: right
+  align: left
   image: me.png
   image_circular: true # crops the image to make it circular
   more_info:
@@ -20,9 +20,48 @@ announcements:
 
 latest_posts:
   enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
+  scrollable: false # keep the latest posts in the normal page flow
   limit: 3 # leave blank to include all the blog posts
 ---
+
+<style>
+  /* Homepage presentation, inspired by Lil'Log's quiet editorial style. */
+  .post {
+    --global-theme-color: #345f78;
+    --global-hover-color: #23495f;
+  }
+  html[data-theme="dark"] .post {
+    --global-theme-color: #a5c8d9;
+    --global-hover-color: #c6e1ed;
+  }
+  .post .post-header { margin-bottom: 2rem; }
+  .post .post-header .post-title { letter-spacing: -0.035em; }
+  .post article .profile.float-left {
+    width: 26%;
+    max-width: 220px;
+    margin: 0 2rem 1.5rem 0;
+  }
+  .post article .clearfix { line-height: 1.75; }
+  .post article > h2 {
+    clear: both;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--global-divider-color);
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+  @media (max-width: 575px) {
+    .post article .profile.float-left {
+      width: 48%;
+      max-width: 180px;
+      margin: 0 0 1.5rem;
+    }
+  }
+  @layer utilities {
+    @media (max-width: 575px) {
+      .post article .profile.float-left { float: none !important; }
+    }
+  }
+</style>
 
 Hi, I'm Michael Zaitsev. Welcome to my personal website.
 
