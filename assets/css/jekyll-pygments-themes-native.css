@@ -26,7 +26,7 @@
 .highlight .kt,
 .highlight .nt,
 .highlight .ow {
-  color: #fb4934;
+  color: #d88b7c;
 }
 
 .highlight .s,
@@ -43,7 +43,7 @@
 .highlight .sr,
 .highlight .s1,
 .highlight .ss {
-  color: #b8bb26;
+  color: #b7bd87;
 }
 
 .highlight .m,
@@ -55,14 +55,14 @@
 .highlight .mo,
 .highlight .no,
 .highlight .kc {
-  color: #d3869b;
+  color: #c59aaa;
 }
 
 .highlight .nf,
 .highlight .fm,
 .highlight .nc,
 .highlight .nn {
-  color: #fabd2f;
+  color: #d8b978;
 }
 
 .highlight .nb,
@@ -72,7 +72,7 @@
 .highlight .vc,
 .highlight .vg,
 .highlight .vi {
-  color: #8ec07c;
+  color: #9fbd9a;
 }
 
 .highlight .o,
@@ -82,22 +82,22 @@
 }
 
 .highlight .nd {
-  color: #fe8019;
+  color: #e2c99a;
 }
 
 .highlight .err,
 .highlight .gd,
 .highlight .gt {
-  color: #fb4934;
+  color: #d88b7c;
 }
 
 .highlight .gi {
-  color: #b8bb26;
+  color: #b7bd87;
 }
 
 /* Warm accents for the site's existing dark background. */
 html:root[data-theme="dark"] {
-  --global-theme-color: #fabd2f;
-  --global-hover-color: #fe8019;
+  --global-theme-color: #d8b978;
+  --global-hover-color: #e2c99a;
   --global-hover-text-color: #282828;
 }
