@@ -16,7 +16,101 @@ pagination:
     after: 3 # The number of links after the current page
 ---
 
-<div class="post">
+<style>
+  .blog-index {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  .blog-index .header-bar {
+    text-align: left;
+    margin: 2.5rem 0 3rem;
+    border: 0;
+  }
+
+  .blog-index .header-bar h1 {
+    margin: 0 0 0.6rem;
+    font-size: clamp(1.9rem, 4vw, 2.2rem);
+    line-height: 1.2;
+    font-weight: 700;
+  }
+
+  .blog-index .header-bar h2 {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: var(--global-text-color-light);
+  }
+
+  .blog-index .post-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .blog-index .post-list > li {
+    background: #f2f1ee;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 0 0 1.5rem;
+  }
+
+  html[data-theme="dark"] .blog-index .post-list > li {
+    background: #2b2b30;
+    border-color: rgba(255, 255, 255, 0.03);
+  }
+
+  .blog-index .post-list > li h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.45rem;
+    line-height: 1.3;
+    font-weight: 700;
+  }
+
+  .blog-index .post-list .post-title {
+    color: var(--global-text-color);
+    text-decoration: none;
+  }
+
+  .blog-index .post-list .post-title:hover,
+  .blog-index .post-list .post-title:focus-visible {
+    color: var(--global-theme-color);
+    text-decoration: underline;
+  }
+
+  .blog-index .post-list > li p {
+    margin: 0 0 0.55rem;
+    line-height: 1.55;
+  }
+
+  .blog-index .post-list .post-meta,
+  .blog-index .post-list .post-tags {
+    font-size: 0.8rem;
+    color: var(--global-text-color-light);
+  }
+
+  .blog-index .post-list .post-tags {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 575px) {
+    .blog-index .header-bar {
+      margin: 1.5rem 0 2rem;
+    }
+
+    .blog-index .post-list > li {
+      padding: 1.2rem;
+    }
+
+    .blog-index .post-list > li h3 {
+      font-size: 1.25rem;
+    }
+  }
+</style>
+
+<div class="post blog-index">
 
 {% assign blog_name_size = site.blog_name | size %}
 {% assign blog_description_size = site.blog_description | size %}
